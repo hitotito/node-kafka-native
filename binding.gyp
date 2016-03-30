@@ -20,7 +20,10 @@
           'OS=="mac"',
           {
             'xcode_settings': {
-              'MACOSX_DEPLOYMENT_TARGET': '10.11'
+              'MACOSX_DEPLOYMENT_TARGET': '10.11',
+              'OTHER_CFLAGS': [
+                '-std=c++11'
+              ]
             },
             'libraries' : ['-lz']
           }
